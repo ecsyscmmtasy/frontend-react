@@ -1,0 +1,100 @@
+/* Основная секция Hero */
+.hero-section {
+  background-color: #ffffff; /* Чистый белый фон */
+  padding: 100px 0;         /* Большие отступы сверху и снизу */
+}
+
+/* Контейнер, который держит контент по центру экрана */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: flex-start; /* Весь контент прижат к левому краю */
+}
+
+/* Обертка для текста и кнопок, чтобы ограничить ширину */
+.hero-content {
+  max-width: 580px; /* Ограничиваем ширину текста, чтобы он не шел одной длинной строкой */
+  text-align: left; /* Текст строго по левому краю */
+}
+
+/* Фиолетовый бейдж над заголовком */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #eeebff; /* Мягкий фиолетовый фон */
+  color: #4f46e5;            /* Насыщенный фиолетовый текст */
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.badge-icon {
+  font-size: 0.9rem;
+}
+
+/* Огромный жирный заголовок */
+.hero-title {
+  font-size: 3.8rem; /* Крупный размер шрифта */
+  font-weight: 800;  /* Максимальная жирность */
+  color: #0f172a;    /* Темный цвет */
+  line-height: 1.1;  /* Компактный межстрочный интервал */
+  margin: 0 0 28px 0;
+  letter-spacing: -0.025em; /* Слегка сближенные буквы */
+}
+
+/* Подзаголовок (описание) */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #64748b;    /* Спокойный серый цвет */
+  line-height: 1.6;  /* Хороший межстрочный интервал для чтения */
+  margin: 0 0 40px 0;
+}
+
+/* Обертка для кнопок, чтобы они стояли в один ряд */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+/* --- СТИЛИ ДЛЯ КНОПОК --- */
+
+/* Общие стили для обеих кнопок */
+.btn-primary, .btn-secondary {
+  padding: 16px 30px;        /* Крупные отступы внутри кнопки */
+  border-radius: 12px;       /* Заметное скругление углов */
+  font-size: 1.05rem;
+  font-weight: 600;          /* Жирный текст */
+  cursor: pointer;
+  transition: all 0.2s ease; /* Плавная анимация при наведении */
+}
+
+/* 1. Главная фиолетовая кнопка (Начать бесплатно) */
+.btn-primary {
+  background-color: #4f46e5; /* Фиолетовый фон */
+  color: #ffffff;            /* Белый текст */
+  border: none;
+}
+
+/* Эффект при наведении на фиолетовую кнопку */
+.btn-primary:hover {
+  background-color: #4338ca; /* Цвет становится чуть-чуть темнее */
+}
+
+/* 2. Второстепенная прозрачная кнопка (Узнать больше) */
+.btn-secondary {
+  background: transparent;     /* Прозрачный фон */
+  border: 1px solid #e2e8f0;   /* Тонкая серая рамка */
+  color: #0f172a;             /* Темный текст */
+}
+
+/* Эффект при наведении на прозрачную кнопку */
+.btn-secondary:hover {
+  background-color: #f8fafc;   /* Появляется легкий серый фон */
+  border-color: #cbd5e1;       /* Рамка становится капельку темнее */
+}
