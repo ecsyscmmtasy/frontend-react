@@ -1,33 +1,19 @@
-import React from 'react';
+import { useState } from 'react';
 import './App.css';
-import Header from './components/Header/Header';
-import Counter from './components/Counter/Counter';
-import UserList from './components/UserList/UserList';
 
-function App() {
-  return (
-    <div className="app">
-      <Header title="React Практика" />
+export default function App() {
 
-      <main className="app__main">
-        <section className="app__section">
-          <h2>Задание 1: Счётчик</h2>
-          <p className="app__description">
-            Изучите компонент Counter — как работает useState и обработка событий.
-          </p>
-          <Counter />
-        </section>
+  const[text, setText] = useState('');
 
-        <section className="app__section">
-          <h2>Задание 2: Список пользователей</h2>
-          <p className="app__description">
-            Изучите компонент UserList — как работает useEffect и загрузка данных.
-          </p>
-          <UserList />
-        </section>
-      </main>
+  return(
+    <div className='box'>
+      <label> Введите текст:</label> 
+    <input
+    className="input-style"
+    value={text}
+    onChange={(e) => setText(e.target.value)}
+    />
+<p>{text}</p>
     </div>
   );
 }
-
-export default App;
