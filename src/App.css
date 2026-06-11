@@ -1,0 +1,43 @@
+/* src/styles/App.css */
+
+.app-container {
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.app-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.app-title {
+  color: #333;
+}
+
+.btn-register {
+  padding: 12px 24px;
+  fontSize: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: background 0.2s ease;
+}
+
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+.analytics-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
